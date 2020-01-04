@@ -49,17 +49,12 @@
 {%- endif %}
 
 {%- if theme.footer.powered.enable and theme.footer.theme.enable %}
-  <span class="post-meta-divider">|</span>
+  <span class="post-meta-divider"></span>
 {%- endif %}
 
 {%- if theme.footer.theme.enable %}
   <div class="theme-info">
-    {%- set next_site = 'https://theme-next.org' %}
-    {%- if theme.scheme !== 'Gemini' %}
-      {%- set next_site = 'https://' + theme.scheme | lower + '.theme-next.org' %}
-    {%- endif %}
-    {{- __('footer.theme') }} – {{ next_url(next_site, 'NexT.' + theme.scheme, {class: 'theme-link'}) }}
-    {%- if theme.footer.theme.version %} v{{ next_version }}{%- endif %}
+   
   </div>
 {%- endif %}
 
