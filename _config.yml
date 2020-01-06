@@ -108,3 +108,9 @@ backup:
   message: Back up my www.itrhx.com blog
   repository:
     github: https://github.com/ppaio/ppaio.github.io.git,beifen
+   
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
